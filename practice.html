@@ -3,30 +3,48 @@
 <head>
 
 <meta http-equiv="content-Type" content="text/html, charset-utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>J A M A R</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
+<title>J A M A R</title>
 
+
+<!-- inicio de los estilos -->
 <style>
     
-    /* Add a red background color to the top navigation bar */
+/* Add a red background color to the top navigation bar */
 .topnav {
   background-color: red;
   height: 75px;
   width: 100%;
-}
 
-img {
-  float: right;
-  width: 100px;
-  height: 60px; 
-  margin-top: 6px;
-  padding-right: 160px;
 }
+/*Da estilo posicion y demás a la imagen de Jamar*/
+.topnav img {
 
+  height: 60px;
+  width: 170px;
+  margin-top: 8px;
+  padding-left: 60px;
+
+}
+ /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    padding-right: : 40px;
+    margin-top: 1px;
+  }
+
+/*Da estilo al icono de barras*/
 button.icon-bar{
 
  -moz-border-radius-topright: 5px;
@@ -35,18 +53,19 @@ button.icon-bar{
   position: fixed;
    border: none;
   background: red;
-  height: 30px;
-  width: 25px;
+  height: 35px;
+  width: 40px;
   color: black;
   font-size: 10pt;
     outline: none;
     opacity: 1;
   margin-left: 20px;
-  margin-top: 18px;
-  
+  margin-top: 23px;
+   border-radius: 5px;
 
   }
 
+/*Da estilo al lo que se encuentra el container-4 como el input search*/
 .container-4{
   overflow: hidden;
   width: 100px;
@@ -55,15 +74,16 @@ button.icon-bar{
    padding-right: 380px;
 }
 
+/*Da estilo al input search*/
 .container-4 input#search{
-  width: 455px;
+  width: 375px;
   height: 30px;
   background: white;
   border: none;
   font-size: 10pt;
   float: none;
   color: black;
-  margin-top: 18px;
+  margin-top: 24px;
    
 
   -webkit-border-radius: 5px;
@@ -71,6 +91,7 @@ button.icon-bar{
   border-radius: 5px;
 }
 
+/*Da el estilo al icono de la lupa en el search*/
 .container-4 button.icon{
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
@@ -95,6 +116,7 @@ button.icon-bar{
   transition: all .55s ease;
 }
 
+/*Mantiene activo el, enfoca el icono de la lupa en el search*/
 .container-4:hover button.icon, 
 .container-4:active button.icon, 
 .container-4:focus button.icon{
@@ -106,16 +128,13 @@ button.icon-bar{
 
  /* Change the color of links on hover */
 button.icon-bar:hover{
-    background: skyblue;
+    background: pink;
   }
  /* Change the color of links on hover */
   .container-4:hover button.icon:hover{
     background: skyblue;
   }
- /* Change the color of links on hover */
-.topnav1:hover{
-    background: grey;
-  }
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: right;
@@ -147,15 +166,38 @@ button.icon-bar:hover{
   }
 }
 
-  </style>
+/*Estilo de las 3 imagenes déspues del carrusel*/
+div.polaroid {
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+  padding: 40px 20px;
+ border-radius: 16px;
+ margin-left: 40px;
+}
 
+.polaroid img {
+   border-radius: 8px;
+    margin-top: 5px;
+    margin-left: 1px;
+    width: 100%;
+}
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+/*Fin del estilo de las imagenes*/
+
+  </style>
+<!-- //Fin de los estilo -->
 </head>
 
-
+/*Inicio del body*/
 <body>
 
-  <!-- Barra # 3-->
-  <table width="100%" height="30" border="0" 
+  <!-- Barra encima del topnav-->
+<table width="100%" height="30" border="0" 
 cellspacing="5" cellpadding="5" bgcolor="skyblue">
 
 <tr>
@@ -169,16 +211,20 @@ cellspacing="5" cellpadding="5" bgcolor="skyblue">
   <td align="right"><font face="Verdana, Geneva, sans-serif" 
         color="white"  size="2">Juegos de sala 80% de descuento<strong>                 APROVECHA AHORA</strong></font>
   </td>
-  <td width="430"  align="right"><i class="fa fa-facebook-square" aria-hidden="true"></i></td>
-  <td width="40" align="right"><i class="fa fa-instagram" aria-hidden="true"></i></td>
-  <td width="40" align="right"><i class="fa fa-youtube-play" aria-hidden="true"></i></td>
+  <td width="430"  align="right"><a href="#facebook"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2"><i class="fa fa-facebook-square" aria-hidden="true"></i></font></a></td>
+  <td width="40" align="center"><a href="#intagram"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2"><i class="fa fa-instagram" aria-hidden="true"></i></font></a></td>
+  <td width="40" align="margin-left"><a href="#youtube"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2"><i class="fa fa-youtube-play" aria-hidden="true"></i></font></a></td>
 
 </tr>
+
 </table>
 </td>
 </tr>
 </table>
-<!-- // -->
+<!-- Fin barra del topnav -->
 
 
 <!-- Barra de menu principal -->
@@ -203,16 +249,15 @@ cellspacing="5" cellpadding="5" bgcolor="skyblue">
     <button class="icon"><i class="fa fa-search"></i></button>
   </div>
 </div>
-<!-- // -->
+<!-- Fin del search bar -->
 
-<button class="icon-bar" width="100" height="60"><i class="fa fa-bars"></i></button>
+<button class="icon-bar"><i class="fa fa-bars"></i></button>
 
-
-<img src="imagenes/jamar.jpg"/>
+<img src="imagenes/jamar.jpg" alt="Jamar" >
 
 </div>
-<!-- // -->
-
+<!-- Fin barra Menu principal -->
+</nav>
 
 <!-- Sub barra # 2 -->
   <table width="100%" height="30" border="0" 
@@ -227,32 +272,32 @@ cellspacing="5" cellpadding="5" bgcolor="#8B0000">
 <tr>
 <div class="collapse navbar-collapse" id="nav1">
         <ul class="nav navbar-nav">
-<td width="105" align="center"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2"><a data-trigger="hover">Dormitorios</a></font></td>
+<td width="105" align="center"><a href="#dormitorios"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Dormitorios</a></font></a></td>
 
-<td width="109" align="center"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Salas</font></td>
+<td width="109" align="center"><a href="#salas"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Salas</font></a></td>
 
-<td width="114"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Comedores</font></td>
+<td width="114"><a href="#comedores"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Comedores</font></a></td>
                 
-<td width="114"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Infantil</font></td>
+<td width="114"><a href="#infantil"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Infantil</font></a></td>
 
-<td width="116"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Entretenimiento</font></td>
+<td width="116"><a href="#entretenimiento"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Entretenimiento</font></a></td>
 
-<td width="111"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Colchones</font></td>
+<td width="111"><a href="#colchones"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Colchones</font></a></td>
 
 <td width="113" align="left"><font face="Verdana, Geneva, sans-serif" 
         color="white"  size="2">|</font></td>
 
-<td width="80"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Encuentra tu estilo</font></td>
+<td width="80"><a href="#encuentratuestilo"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Encuentra tu estilo</font></a></td>
 
-<td width="116"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Catálogos</font></td>
+<td width="116"><a href="#catálagos"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Catálogos</font></a></td>
 
 <td width="113"><a href="#ofertas"><font face="Verdana, Geneva, sans-serif" 
         color="white"  size="2"><h4>OFERTAS</h4></font></a></td> 
@@ -264,9 +309,9 @@ cellspacing="5" cellpadding="5" bgcolor="#8B0000">
 </td>
 </tr>
 </table>
-<!-- // -->
+<!--Fin sub barra # 2 -->
 
-<!-- Sub barra # 4 -->
+<!-- Sub barra #4 -->
   <table width="100%" height="30" border="0" 
 cellspacing="5" cellpadding="5" bgcolor="cyan">
 
@@ -278,14 +323,94 @@ cellspacing="5" cellpadding="5" bgcolor="cyan">
 
 <tr>
    <td width="105" align="center"><font face="Verdana, Geneva, sans-serif" 
-        color="black"  size="2">Te estamos cuidando. Conoce<a href="#"> aquí</a><em><strong>     las medidas contra el Covid19.</strong></em></font></td>
+        color="black"  size="2">¡Te estamos cuidando! Conoce<a href="#aquí"> aquí</a><em><strong>     las medidas contra el Covid19.</strong></em></font></td>
  </tr>
 
 </table>
 </td>
 </tr>
 </table>
-<!-- // -->
+<!-- Fin sub barra #4 -->
+
+<!-- Carrusel de imagenes -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/banner4.jpg" alt="Banner 1" width="1100" height="500">
+       <div class="carousel-caption">
+          <h3><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="5">Crédito facil para todos</h3>
+        <p>¡Aprovecha y escoge tu sofacama ideal!</p></font>
+<button type="button" class="btn btn-info btn-md">VER OFERTA A CRÉDITO</button>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/banner2.jpg" alt="Banner 2" width="1100" height="500">
+       <div class="carousel-caption">
+          <h3>Muebles fashion</h3>
+          <p>¡Llevate el que más te guste!</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/banner3.jpg" alt="Banner 3" width="1100" height="500">
+       <div class="carousel-caption">
+          <h3>¿No tienes sillas para comedor?</h3>
+          <p>¡Ven y encuentra la que más te gusten!</p>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="fa fa-chevron-circle-left" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="fa fa-chevron-circle-right" aria-hidden="true"></span>
+  </a>
+</div>
+</div>
+<!-- Fin del carrusel -->
+
+<!-- inicio de las 3 imagenes debajo del carrusel -->
+<h2 align="center"><strong>Destacados</strong></h2>
+
+<div class="polaroid">
+  <img src="imagenes/j1.png">
+  <div class="container">
+    <strong>¿Cuál es tu estilo?</strong>
+  <p>Descubre aquí cuál es tu estilo</p>
+     <a href="#vermas">Ver más</a>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="imagenes/j2.png">
+  <div class="container">
+   <strong>Nueva Coleccion Nova Tempo</strong>
+  <p>Para un estilo moderno y refrescante</p>
+     <a href="#vermas">Ver más</a>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="imagenes/j3.png">
+  <div class="container">
+    <strong>Descuentos IMPPRESIONANTES</strong>
+  <p>No te pierdas las últimas unidades SALE</p>
+    <a href="#vermas">Ver más</a>
+  </div>
+</div>
+<!-- //Fin de las 3 imagenes -->
 
 </body>
+/*Fin del body*/
 </html>
