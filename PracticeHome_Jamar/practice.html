@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="content-Type" content="text/html, charset-utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="jquery-1.11.3.min.js"></script>
+  <script src="app.js"></script>
+
+<title>J A M A R</title>
+
+
+<!-- inicio de los estilos -->
+<style>
+    
+/* Add a red background color to the top navigation bar */
+.topnav {
+  background-color: red;
+  height: 75px;
+  width: 100%;
+
+}
+/*Da estilo posicion y demás a la imagen de Jamar*/
+.topnav img {
+
+  height: 60px;
+  width: 170px;
+  margin-top: 8px;
+  padding-left: 60px;
+
+}
+ /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    padding-right: : 40px;
+    margin-top: 1px;
+    margin-bottom: 25px;
+  }
+
+/*Da estilo al icono de barras*/
+button.icon-bar{
+
+ -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+
+  position: fixed;
+   border: none;
+  background: red;
+  height: 35px;
+  width: 40px;
+  color: black;
+  font-size: 10pt;
+    outline: none;
+    opacity: 1;
+  margin-left: 20px;
+  margin-top: 23px;
+   border-radius: 5px;
+
+  }
+
+/*Da estilo al lo que se encuentra el container-4 como el input search*/
+.container-4{
+  overflow: hidden;
+  width: 100px;
+  white-space: nowrap;
+   float: right;
+   padding-right: 380px;
+}
+
+
+/*Da estilo al input search*/
+.container-4 input#search{
+  width: 375px;
+  height: 30px;
+  background: white;
+  border: none;
+  font-size: 10pt;
+  float: none;
+  color: black;
+  margin-top: 24px;
+   
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/*Da el estilo al icono de la lupa en el search*/
+.container-4 button.icon{
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+ 
+  border: none;
+  background: #232833;
+  height: 30px;
+  width: 40px;
+  color: #4f5b66;
+  opacity: 0;
+  margin-top: 18px;
+  font-size: 10pt;
+ 
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+
+/*Mantiene activo el, enfoca el icono de la lupa en el search*/
+.container-4:hover button.icon, 
+.container-4:active button.icon, 
+.container-4:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -40px;
+    margin-top: 18px;
+  }
+
+ /* Change the color of links on hover */
+button.icon-bar:hover{
+    background: pink;
+  }
+ /* Change the color of links on hover */
+  .container-4:hover button.icon:hover{
+    background: skyblue;
+  }
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 11px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: pink;
+  color: black;
+}
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a{
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+}
+
+/*Estilo de las 3 imagenes déspues del carrusel*/
+div.polaroid {
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+  padding: 40px 20px;
+ border-radius: 16px;
+ margin-left: 40px;
+  margin-bottom: 80px;
+}
+
+.polaroid img {
+   border-radius: 8px;
+    margin-top: 5px;
+    margin-left: 1px;
+    width: 100%;
+}
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+/*Fin del estilo de las imagenes*/
+
+/*Estilo de las 4 imagenes*/
+.polaroid1 {
+  width: 23%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+  padding: 10px;
+ border-radius: 16px;
+  margin-left: 25px;
+  margin-right: auto;
+ margin-bottom: 50px;
+}
+
+.polaroid1 img {
+   border-radius: 8px;
+    margin-top: 5px;
+    margin-left: 8px;
+    width: 95%;
+}
+div.container1 {
+  text-align: center;
+  padding: 10px 20px;
+}
+/*Fin del estilo de 4 las imagenes*/
+
+
+/*Estilo del megusta en forma de corazón*/
+.heart {
+  background-image: url(imagenes/web_heart_animation.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 1450px;
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+}
+.heart:hover
+{
+  background-position: right; //displaying last heart frame 
+}
+
+@-webkit-keyframes heartTransition
+{
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+
+@keyframes heartTransition
+{
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+
+.heart_animate
+{
+  -webkit-animation-duration: .8s;
+  //-webkit-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: heartTransition;
+  -webkit-animation-timing-function: steps(28);
+  animation-duration: .8s;
+  //animation-iteration-count: 1;
+  animation-iteration-count: infinite;
+  animation-name: heartTransition;
+  animation-timing-function: steps(28);
+  background-position: right;
+}
+/*------------Fin del estilo del me gusta en forma de corazón------------*/
+
+/*----Estilo de Credi Jamar-------------------------------*/
+.button-container{
+display:inline-block;
+position:relative;
+padding-right: 50px;
+margin-bottom: 40px;
+}
+
+.button-container button{
+
+position: absolute;
+
+right:50%;
+top:55%;
+background-color:red;
+border-radius: 10px;
+color: white;
+text-transform:uppercase;
+padding:1em 1.5em;
+
+}
+/*------------Fin estilo Credi Jamar-------------------------*/
+
+/*-----------Estilo de la galeria de imagenes----------*/
+#gallery .col-lg-4{
+  margin: 0 !important;
+  padding: 8px;
+  
+  display: flex;
+  flex-wrap: wrap;;
+  max-width: 1000px;
+  min-width: 300px; 
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#gallery img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid skyblue;
+}
+
+#gallery img:hover{
+  border: 5px solid #F7F7F7;
+}
+
+@media screen and (min-width: 600px){
+  .gallery{
+  width: calc(50% - 2em);
+  overflow: hidden;
+  }
+}
+.centrado{
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+/*---Fin de estilos de la galeria de imagenes----*/
+
+/*----Inicio de estilos de galeria encuentra tu estilo*/
+#gallery3 .col-lg-4{
+  margin: 0 !important;
+  padding: 40px;
+  
+  display: flex;
+  flex-wrap: wrap;;
+  max-width: 1000px;
+  min-width: 100px; 
+  margin-left: 25px;
+  margin-right: auto;
+}
+
+#gallery3 img{
+  width: 320px;
+  height: 400px;
+  border-radius: 8px;
+  border: 1px solid skyblue;
+}
+
+#gallery3 img:hover{
+  border: 5px solid #F7F7F7;
+}
+
+/*----------Fin estilos galeria encuentra tu estilo---------*/
+
+/*-------------Inicio estilos de la imagen del sillo---------*/
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+.texto-encima{
+    position: absolute;
+    top: 30%;
+    left: 48%;
+}
+.centrado1{
+    position: absolute;
+    top: 44%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+}
+.text-align{
+    position: absolute;
+    top: 50%;
+    left: 48%;
+}
+.contenedor button {
+position:  absolute;
+top: 65%;
+left: 48%;
+width:200px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+z-index:99;
+}
+/*-----------Fin de estilo de la imagen del sillon*/
+
+/*-----Estilo del button ver más categorías-----*/
+.center button{
+ position: absolute;
+left: 39%;
+width:290px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+z-index:99;
+margin-bottom: 30px;
+}
+/*------------Fin del estilo button ver más categorías--------------*/
+
+/*----------------Estilos del botón credijamar2--------------------*/
+.button-contenedor{
+display:inline-block;
+position:relative;
+padding-right: 50px;
+margin-bottom: 40px;
+}
+.button-contenedor button{
+
+position: absolute;
+
+right:38.38%;
+top:65%;
+background-color:red;
+border-radius: 10px;
+color: white;
+text-transform:uppercase;
+padding:1em 1.5em;
+}
+/*-----------Fin del estilo del botón credijamar2------------------*/
+
+</style><!-- //Fin de los estilos -->
+</head>
+
+
+<body>
+
+  <!-- Barra encima del topnav-->
+<table width="100%" height="30" border="0" 
+cellspacing="5" cellpadding="5" bgcolor="#0cc4c4">
+
+<tr>
+
+<td nowrap="nowrap">
+
+<table width="100%" border="0" align="left" cellspacing="1" cellpadding="1">
+
+<tr>
+
+  <td align="right"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Juegos de sala 80% de descuento<strong>                 APROVECHA AHORA</strong></font>
+  </td>
+  <td width="430"  align="right"><a href="#facebook"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2"><i class="fa fa-facebook-square" aria-hidden="true"></i></font></a></td>
+  <td width="40" align="center"><a href="#intagram"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2"><i class="fa fa-instagram" aria-hidden="true"></i></font></a></td>
+  <td width="40" align="margin-left"><a href="#youtube"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2"><i class="fa fa-youtube-play" aria-hidden="true"></i></font></a></td>
+
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+<!-- Fin barra del topnav -->
+
+
+<!-- Barra de menu principal -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <div class="topnav">
+
+
+<a  href="#carritodecompras"class="fa fa-shopping-cart" aria-hidden="true">
+<span class="badge">8</span></a>
+<a  href="#usuario" class="fa fa-user" aria-hidden="true"></a>
+<a  href="#likes" class="fa fa-heart" aria-hidden="true"></a>
+<a  href="#envíos" class="fa fa-truck"></a>
+
+
+  <a href="#tiendas">TIENDAS</a>
+  <a href="#asesoria">ASESORIA</a>
+  <a href="#credijamar">CREDIJAMAR</a>
+
+<!--  search bar -->
+ <div class="box">
+  <div class="container-4">
+    <input type="search" id="search" placeholder="Find in jamar..." />
+    <button class="icon"><i class="fa fa-search"></i></button>
+  </div>
+</div>
+<!-- Fin del search bar -->
+
+<button class="icon-bar"><i class="fa fa-bars"></i></button>
+
+<img src="imagenes/jamar.jpg" alt="Jamar" >
+
+</div>
+<!-- Fin barra Menu principal -->
+</nav>
+
+<!-- Sub barra # 2 -->
+  <table width="100%" height="30" border="0" 
+cellspacing="5" cellpadding="5" bgcolor="#ce242a">
+
+<tr>
+
+<td nowrap="nowrap">
+
+<table width="100%" border="0" align="left" cellspacing="1" cellpadding="1">
+
+<tr>
+<div class="collapse navbar-collapse" id="nav1">
+        <ul class="nav navbar-nav">
+<td width="105" align="center"><a href="#dormitorios"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Dormitorios</a></font></a></td>
+
+<td width="109" align="center"><a href="#salas"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Salas</font></a></td>
+
+<td width="114"><a href="#comedores"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Comedores</font></a></td>
+                
+<td width="114"><a href="#infantil"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Infantil</font></a></td>
+
+<td width="116"><a href="#entretenimiento"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Entretenimiento</font></a></td>
+
+<td width="111"><a href="#colchones"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Colchones</font></a></td>
+
+<td width="113" align="left"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">|</font></td>
+
+<td width="80"><a href="#encuentratuestilo"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Encuentra tu estilo</font></a></td>
+
+<td width="116"><a href="#catálagos"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2">Catálogos</font></a></td>
+
+<td width="113"><a href="#ofertas"><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="2"><h4>OFERTAS</h4></font></a></td> 
+</ul>
+</div>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+<!--Fin sub barra # 2 -->
+
+<!-- Sub barra #4 -->
+  <table width="100%" height="30" border="0" 
+cellspacing="5" cellpadding="5" bgcolor="#d5edf0">
+
+<tr>
+
+<td nowrap="nowrap">
+
+<table width="100%" border="0" align="left" cellspacing="1" cellpadding="1">
+
+<tr>
+   <td width="105" align="center"><font face="Verdana, Geneva, sans-serif" 
+        color="black"  size="2">¡Te estamos cuidando! Conoce<a href="#aquí"> aquí</a><em><strong>     las medidas contra el Covid19.</strong></em></font></td>
+ </tr>
+
+</table>
+</td>
+</tr>
+</table>
+<!-- Fin sub barra #4 -->
+
+<!-- Carrusel de imagenes -->
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes/bann3.jpg" alt="Banner 1" width="1100" height="500">
+       <div class="carousel-caption">
+          <h3><font face="Verdana, Geneva, sans-serif" 
+        color="white"  size="5">Crédito facil para todos</h3>
+        <p>¡Aprovecha y escoge tu sofacama ideal!</p></font>
+<button type="button" class="btn btn-info btn-md">VER OFERTA A CRÉDITO</button>
+<br>
+<br>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/banner2.jpg" alt="Banner 2" width="1100" height="500">
+       <div class="carousel-caption">
+          <h3>Muebles fashion</h3>
+          <p>¡Llevate el que más te guste!</p>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes/banner3.jpg" alt="Banner 3" width="1100" height="500">
+       <div class="carousel-caption">
+          <h3>¿No tienes sillas para comedor?</h3>
+          <p>¡Ven y encuentra la que más te gusten!</p>
+        </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="fa fa-chevron-circle-left" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="fa fa-chevron-circle-right" aria-hidden="true"></span>
+  </a>
+</div>
+</div>
+<!-- Fin del carrusel -->
+
+<!-- inicio de las 3 imagenes debajo del carrusel -->
+<h2 align="center"><strong>Destacados</strong></h2>
+
+<div class="polaroid">
+  <img src="imagenes/j1.png">
+  <div class="container">
+    <strong>¿Cuál es tu estilo?</strong>
+  <p>Descubre aquí cuál es tu estilo</p>
+     <a href="#vermas">Ver más</a>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="imagenes/j2.png">
+  <div class="container">
+   <strong>Nueva Coleccion Nova Tempo</strong>
+  <p>Para un estilo moderno y refrescante</p>
+     <a href="#vermas">Ver más</a>
+  </div>
+</div>
+
+<div class="polaroid">
+  <img src="imagenes/j3.png">
+  <div class="container">
+    <strong>Descuentos IMPPRESIONANTES</strong>
+  <p>No te pierdas las últimas unidades SALE</p>
+    <a href="#vermas">Ver más</a>
+  </div>
+</div>
+
+<!-- //Fin de las 3 imagenes -->
+
+<!-- inicio de las 4 imagenes debajo de las 3 añadidas antes -->
+<section class="container">
+<button type="button" class="btn btn-light btn-lg btn-block"><font face="Verdana, Geneva, sans-serif" color="black" size="6"><strong>Hasta un -60%</strong></font></button>
+</section>
+<br>
+<div class="polaroid1">
+  <img src="imagenes/jam2.jpg">
+
+  <div class="container1">
+    <strong>Cama Doble Basic Bali Wengue</strong><br>
+    <div class="heart"></div>
+  </div>
+<p>
+<button type="button" align="float-left"class="btn btn-outline-danger btn-sm">-20%</button>
+<br><br>
+<strike><small class="text-muted">$923,750</small></strike>
+<br>
+<font face="Verdana, Geneva, sans-serif" 
+color="black"  size="6">$739,000</font><br><br>
+<small><em class="text-muted">También puedes pagar en cuotas de $18,708 por 24 meses - 
+<a href="#verdetalles">Ver detalles</a></em></small></p>
+</div>
+
+<div class="polaroid1">
+<img src="imagenes/ja2.jpg">
+<div class="container1">
+<strong>Comedor 4pts Ambar</strong><br>
+<div class="heart"></div>
+</div>
+
+<p>
+<button type="button" align="float-left"class="btn btn-outline-danger btn-sm">-40%</button>
+<br><br>
+<strike><small class="text-muted">$249,000</small></strike>
+<br>
+<font face="Verdana, Geneva, sans-serif" 
+color="black"  size="6">$199,000</font><br><br>
+<small><em class="text-muted">También puedes pagar en cuotas de $18,708 por 24 meses - 
+<a href="#verdetalles">Ver detalles</a></em></small></p>
+</div>
+
+<div class="polaroid1">
+  <img src="imagenes/jam3.jpg">
+
+  <div class="container1">
+    <strong>Mesa De Centro Lexus</strong><br>
+    <div class="heart"></div>
+  </div>
+
+<p>
+<button type="button" align="float-left"class="btn btn-outline-danger btn-sm">-15%</button>
+<br>
+<br>
+<strike><small class="text-muted">$623,750</small></strike>
+  <br>
+   <font face="Verdana, Geneva, sans-serif" 
+    color="black"  size="6">$499,000</font><br><br>
+    <small><em class="text-muted">También puedes pagar en cuotas de $18,708 por 24 meses - <a href="#verdetalles">Ver detalles</a></em></small></p>
+</div>
+
+<div class="polaroid1">
+  <img src="imagenes/ja4.jpg">
+
+  <div class="container1">
+    <strong>Centro De Entretenimiento</strong><br>
+     <div class="heart"></div>
+  </div>
+
+<p>
+<button type="button" align="float-left"class="btn btn-outline-danger btn-sm">-20%</button>
+<br><br>
+    <strike><small class="text-muted">$748,750</small></strike>
+    <br>
+     <font face="Verdana, Geneva, sans-serif" 
+        color="black"  size="6">$599,000</font><br><br>
+    <small><em class="text-muted">También puedes pagar en cuotas de $18,708 por 24 meses - <a href="#verdetalles">Ver detalles</a></em></small></p>
+</div>
+<!-- //Fin de las 4 imagenes -->
+
+
+<!-- -----------Imagen Credi Jamar---------------- -->
+<div class="button-container">
+<img src="imagenes/credijamar.png" style="width:100%;height:450px" alt="CrediBanner"/>
+<a target="_blank" href="https://www.credijamar.com.co/">
+<button type="button" class="btn btn-md">SOLICITA CRÉDITO HOY</button>
+</a>
+<h2 align="center"><strong>¡Lo más visto!</strong></h2>
+</div>
+<!-- --------Fin de la imagen de crediJamar----------- -->
+
+<!-- inicio de las 4 imagenes de lo más vito -->
+<div class="polaroid1">
+  <img src="imagenes/jam2.jpg">
+
+  <div class="container1">
+    <strong>Cama Doble Basic Bali Wengue</strong><br>
+    <div class="heart"></div>
+  </div>
+
+<p>
+<button type="button" align="float-left"class="btn btn-outline-danger btn-sm">-20%</button>
+<br><br>
+<strike><small class="text-muted">$923,750</small></strike>
+<br>
+<font face="Verdana, Geneva, sans-serif" 
+color="black"  size="6">$739,000</font><br><br>
+<small><em class="text-muted">También puedes pagar en cuotas de $18,708 por 24 meses - 
+<a href="#verdetalles">Ver detalles</a></em></small></p>
+</div>
+
+<div class="polaroid1">
+<img src="imagenes/ja2.jpg">
+<div class="container1">
+<strong>Comedor 4pts Ambar</strong><br>
+<div class="heart"></div>
+</div>
+
+<p>
+<button type="button" align="float-left" class="btn btn-outline-info btn-sm">N E W</button>
+<br><br>
+<strike><small class="text-muted">$249,000</small></strike>
+<br>
+<font face="Verdana, Geneva, sans-serif" 
+color="black"  size="6">$199,000</font><br><br>
+<small><em class="text-muted">También puedes pagar en cuotas de $18,708 por 24 meses - 
+<a href="#verdetalles">Ver detalles</a></em></small></p>
+</div>
+
+<div class="polaroid1">
+  <img src="imagenes/jam3.jpg">
+
+  <div class="container1">
+    <strong>Mesa De Centro Lexus</strong><br>
+    <div class="heart"></div>
+  </div>
+
+<p>
+<button type="button" align="float-left"class="btn btn-outline-danger btn-sm">-15%</button>
+<br><br>
+<strike><small class="text-muted">$623,750</small></strike>
+  <br>
+   <font face="Verdana, Geneva, sans-serif" 
+    color="black"  size="6">$499,000</font><br><br>
+    <small><em class="text-muted">También puedes pagar en cuotas de $18,708 por 24 meses - <a href="#verdetalles">Ver detalles</a></em></small></p>
+</div>
+
+<div class="polaroid1">
+  <img src="imagenes/ja4.jpg">
+
+  <div class="container1">
+    <strong>Centro De Entretenimiento</strong><br>
+     <div class="heart"></div>
+  </div>
+
+<p>
+<button type="button" align="float-left"class="btn btn-outline-danger btn-sm">-20%</button>
+<br><br>
+    <strike><small class="text-muted">$748,750</small></strike>
+    <br>
+     <font face="Verdana, Geneva, sans-serif" 
+        color="black"  size="6">$599,000</font><br><br>
+    <small><em class="text-muted">También puedes pagar en cuotas de $18,708 por 24 meses - <a href="#verdetalles">Ver detalles</a></em></small></p>
+</div>
+<br>
+<br>
+<!-- //Fin de las 4 imagenes -->
+
+<img src="imagenes/bannblue.png" width="100%" height="150"/>
+
+<br>
+<br>
+<br>
+
+<!-- -----Inicio de encuetra tu estilo------ -->
+<section id="gallery3" class="container">
+<div class="text-center pt-5">
+<h2><strong>Encuentra tu estilo</strong></h2>
+</div>
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-12">
+  <a target="_blank" href="https://www.jamar.com/collections/types?attribute=Royal&cache=false">
+  <img src="imagenes/royal.png" alt="Royal" width="300" height="400" />
+  </a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+  <a target="_blank" href="https://www.jamar.com/collections/types?attribute=Natural&cache=false">
+  <img src="imagenes/natural.png" alt="Natural" width="300" height="400">
+  </a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+  <a target="_blank" href="https://www.jamar.com/collections/types?attribute=Tempo&cache=false">
+  <img src="imagenes/tempo.png" alt="Tempo" width="300" height="400">
+  </a>
+</div>
+</div>
+</section>
+<!-- --------------FIN--------------------------- -->
+
+<!-- ------Banner del sillon Ver Ofertas-------------- -->
+<div class="contenedor">
+  <img src="imagenes/sillon.png" style="width:100%;height:400px" />
+<a target="_blank" href="https://www.jamar.com/pages/ofertas"><button type="button" class="btn btn-light btn-lg"><strong><font face="Verdana, Geneva, sans-serif" color="#333c87" size="3">VER OFERTAS</font></strong></button></a>
+   <div class="texto-encima">
+<font face="Arial"color="white" size="2">ESPECIAL DE JULIO 2020</font></div>
+   <div class="centrado1">
+<font face="Verdana, Geneva, sans-serif" 
+color="white"  size="3"><strong>Sofás y butacas con hasta 50% de descuento</strong>
+</font></div>
+<p class="text-align"><font face="Verdana, Geneva, sans-serif" 
+color="white"  size="2">Más de 100 de productos con descuentos desde 30% a 50% de descuento</font></p>
+</div>
+<!-- -------------------Fin------------------ -->
+
+
+<!-- --------------Inicio de la galleria de imagenes de Categorías---------- -->
+<section id="gallery" class="container">
+<div class="text-center pt-5">
+<h2><strong>Categorías Recomendadas</strong></h2>
+</div>
+<br>
+
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-12">
+<a target="_blank" href="https://www.jamar.com/collections/salas">
+<img src="imagenes/C1.jpg"  alt="Salas" width="600" height="400" />
+ <div class="centrado"><strong>SALAS</strong></div>
+</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+<a target="_blank" href="https://www.jamar.com/collections/comedores">
+<img src="imagenes/C2.jpg" alt="Comedores" width="600" height="400" />
+<div class="centrado"><strong>COMEDORES</strong></div>
+</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+<a target="_blank" href="https://www.jamar.com/collections/dormitorios">
+<img src="imagenes/C3.jpg" alt="Dormitorios" width="600" height="400" />
+<div class="centrado"><strong>DORMITORIOS</strong></div>
+</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+<a target="_blank" href="https://www.jamar.com/collections/colchones-base-camas-y-cabeceros">
+<img src="imagenes/C4.jpg" alt="Colchones" width="600" height="400" />
+ <div class="centrado"><strong>COLCHONES</strong></div>
+</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+<a target="_blank" href="https://www.jamar.com/collections/descanso">
+ <img src="imagenes/C5.jpg" alt="Descanso" width="600" height="400" />
+  <div class="centrado"><strong>ENTRETENIMIENTO</strong></div>
+</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+<a target="_blank" href="https://www.jamar.com/collections/infantil-y-juvenil">
+<img src="imagenes/C6.jpg" alt="Infantil y Juvenil" width="600" height="400" />
+<div class="centrado"><strong>JUVENIL Y INFANTIL</strong></div>
+</a>
+</div>
+
+</div>
+</section>
+<br>
+<br>
+<!-- ----------------Fin de la galeria de imagenes------------- -->
+
+<!-- --------Button Ver Más Categorías--------- -->
+<div class="center">
+<a target="_blank" href="https://www.jamar.com/collections">
+<i align="center"><button type="button" class="btn btn-outline-info btn-lg">VER MÁS CATEGORÍAS</button></i>
+</a>
+</div>
+<!-- ----------------Fin del button Ver Más Categorías------------- -->
+<br>
+<br>
+<br>
+<br>
+
+
+<table width="100%" height="170" border="0" 
+cellspacing="5" cellpadding="5" bgcolor=" #4a4a4a">
+
+<tr>
+
+<td align="center">
+
+<table width="100%" border="0" cellspacing="1" cellpadding="1">
+<tr>
+
+<td width="500" align="center"><font face="Verdana, Geneva, sans-serif" 
+color="white" size="3"><i class="fa fa-phone-square" aria-hidden="true"></i>  
+&nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i><br><br><strong><em>COMPRA LLAMANDO</strong></font><br /><font face="Verdana, Geneva, sans-serif" 
+color="white" size="2">llamar al 56 89898888</em></font></td>
+
+<td width="400" align="center"><font face="Verdana, Geneva, sans-serif"
+color="white" size="3"><i class="fa fa-smile-o" aria-hidden="true"></i><br><br>
+<strong><em>ASESORÍA TELEFÓNICA</strong></font><br /><font face="Verdana, Geneva, sans-serif"
+color="white" size="2">agendar una cita</em></font></td>
+
+<td width="400" align="center"><font face="Verdana, Geneva, sans-serif" 
+color="white" size="3"><i class="fa fa-comments-o" aria-hidden="true"></i><br><br>
+<strong><em>ASESORÍA EN LÍNEA</strong></font>
+<br /><font face="Verdana, Geneva, sans-serif" 
+color="white" size="2">iniciar chat</em></font></td>
+
+<td width="520" align="center"><font face="Verdana, Geneva, sans-serif" 
+color="white" size="3"><i class="fa fa-shopping-cart" aria-hidden="true"></i><br><br>
+<strong><em>COMPRA EN LÍNEA</strong></font>
+<br /><font face="Verdana, Geneva, sans-serif" 
+color="white" size="2">estas en el lugar correcto</em></font></td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+<br>
+<br>
+<br>
+
+<!-- -----------Imagen Credi Jamar2---------------- -->
+<div class="button-contenedor">
+<img src="imagenes/credijamar2.png" style="width:100%;height:450px" alt="CrediBanner"/>
+<a target="_blank" href="https://www.credijamar.com.co/">
+<button type="button" class="btn btn-md">QUIERO SABER MÁS</button>
+</a>
+</div>
+<!-- --------Fin de la imagen de crediJamar2----------- -->
+
+
+
+    <!-- Footer -->
+
+    <table width="100%" height="60" border="0" 
+cellspacing="5" cellpadding="5" bgcolor="#4a4a4a">
+
+<tr>
+
+    <td align="center">
+<font face="Verdana, Geneva,sans-serif" color="White" size="2"><em>Haz clic <a href="https://www.jamar.com/pages/rastrea-tu-pedido"> aquí</a>&nbsp;para <strong>¡Para Rastrear tu pedido!</strong></em>&nbsp;<i  href="#envíos" class="fa fa-truck"></i>
+ </font>
+ </td>
+</tr>
+</table>
+<!-- ------------------------------------------------------------------ -->
+
+    <table width="100%" height="360" border="0" 
+cellspacing="5" cellpadding="5" bgcolor="#242424">
+
+<tr>
+
+    <td align="center">
+<td width="200" align="left"></td>
+
+<td width="500" align="left"><font face="Verdana, Geneva, sans-serif" 
+color="white" size="3"><strong>FINANCIAMIENTO</strong></font><br><br>
+<font face="Verdana, Geneva, sans-serif" 
+color="white" size="2">Credijamar<br>Cliente Oro<br>Puntos de pago</font><br><br>
+<img src="imagenes/CREDIJA.png" style="width:30%;height:20%" alt="Credijamar"/><br>
+<a target="_blank" href="https://www.credijamar.com.co/">
+<button type="button" class="btn btn-danger btn-lg">SOLICITAR CRÉDITO</button></a></td>
+
+<td width="460" align="padding-left"><font face="Verdana, Geneva, sans-serif"
+color="white" size="3"><strong>CONTACTANOS</strong></font><br><br>
+<font face="Verdana, Geneva, sans-serif"
+color="white" size="2">-Barranquilla (5) 371 2000<br>-Cartagena (5) 694 9000<br>-Sincelejo (5) 2762026<br>-Bogotá (1) 7436938<br>Santa Marta (5) 435 1979<br>-Montería (4) 789 8879<br>-Valledupar (5) 589 1001<br>-Bucaramanga (7) 697 0311<br>-Medellín (4) 6041631</font></td>
+
+<td width="500" align="padding-left"><font face="Verdana, Geneva, sans-serif" 
+color="white" size="3"><strong>EMPRESA</strong></font><br><br>
+<font face="Verdana, Geneva, sans-serif"
+color="white" size="2">Nosotros<br>Protección de datos personales<br>Trabaje con nosotros<br>Condiciones campañas y eventos<br>Garantías<br>Servicio de transporte gratis<br>Cambios por satisfacción<br>Superintendencia de industria y<br>Comercio SIC</font></td>
+
+<td width="520" align="padding-left"><font face="Verdana, Geneva, sans-serif" 
+color="white" size="3"><strong>SERVICIO AL CLIENTE</strong>
+</font><br><br>
+<font face="Verdana, Geneva, sans-serif"color="white" size="2">
+Contáctanos<br>Condiciones capañas<br>
+Rastrea tu pedido<br>Buscar una tienda<br>
+Estatuto del Consumidor<br>Términos y  condiciones
+</font><br><br><br><br></td>
+
+</td>
+</tr>
+</table>
+<!-- ----------------------------------------------------------------  -->
+
+<!-------------------------------------------------------------------- -->
+<table width="100%" height="150" border="0" 
+cellspacing="5" cellpadding="5" bgcolor="black">
+<tr>
+    <td align="center"> 
+   <font face="Verdana, Geneva,sans-serif" color="white" size="2"> 
+TODOS LOS DERECHOS RESERVADOS, MUEBLES JAMAR S.A NIT: 9000615116- 4
+<br>
+TELÉFONOS DE ATENCIÓN AL CLIENTE: BARRANQUILLA (5) 37 200 RESTO DEL PAIS 018000 935 111
+<br>
+DIRECCIÓN: CALLE 34 # 39-41 BARRANQUILLA, ATLÁTICO
+<br>    
+Copyright &copy; MUEBLES JAMAR S.A 2020
+    </font>
+    </td>    
+    </tr>
+</table>
+<!-- -------------------------Fin del FOOTER--------------------------------------- -->
+</body>
+</html>
