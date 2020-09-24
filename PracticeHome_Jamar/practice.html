@@ -8,8 +8,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="style.css">
+  
+<!-- Con esta dirección llamo a mis estilos -->
+  <link href="css/styles.css" rel="stylesheet"> 
+<!-- -------------------------------------- -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -19,488 +21,32 @@
   <script src="app.js"></script>
 
 <title>J A M A R</title>
-
-
-<!-- inicio de los estilos -->
-<style>
-    
-/* Add a red background color to the top navigation bar */
-.topnav {
-  background-color: red;
-  height: 75px;
-  width: 100%;
-
-}
-/*Da estilo posicion y demás a la imagen de Jamar*/
-.topnav img {
-
-  height: 60px;
-  width: 170px;
-  margin-top: 8px;
-  padding-left: 60px;
-
-}
- /* Make the image fully responsive */
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-    padding-right: : 40px;
-    margin-top: 1px;
-    margin-bottom: 25px;
-  }
-
-/*Da estilo al icono de barras*/
-button.icon-bar{
-
- -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomright: 5px;
-
-  position: fixed;
-   border: none;
-  background: red;
-  height: 35px;
-  width: 40px;
-  color: black;
-  font-size: 10pt;
-    outline: none;
-    opacity: 1;
-  margin-left: 20px;
-  margin-top: 23px;
-   border-radius: 5px;
-
-  }
-
-/*Da estilo al lo que se encuentra el container-4 como el input search*/
-.container-4{
-  overflow: hidden;
-  width: 100px;
-  white-space: nowrap;
-   float: right;
-   padding-right: 380px;
-}
-
-
-/*Da estilo al input search*/
-.container-4 input#search{
-  width: 375px;
-  height: 30px;
-  background: white;
-  border: none;
-  font-size: 10pt;
-  float: none;
-  color: black;
-  margin-top: 24px;
-   
-
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-/*Da el estilo al icono de la lupa en el search*/
-.container-4 button.icon{
-  -webkit-border-top-right-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomright: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
- 
-  border: none;
-  background: #232833;
-  height: 30px;
-  width: 40px;
-  color: #4f5b66;
-  opacity: 0;
-  margin-top: 18px;
-  font-size: 10pt;
- 
-  -webkit-transition: all .55s ease;
-  -moz-transition: all .55s ease;
-  -ms-transition: all .55s ease;
-  -o-transition: all .55s ease;
-  transition: all .55s ease;
-}
-
-/*Mantiene activo el, enfoca el icono de la lupa en el search*/
-.container-4:hover button.icon, 
-.container-4:active button.icon, 
-.container-4:focus button.icon{
-    outline: none;
-    opacity: 1;
-    margin-left: -40px;
-    margin-top: 18px;
-  }
-
- /* Change the color of links on hover */
-button.icon-bar:hover{
-    background: pink;
-  }
- /* Change the color of links on hover */
-  .container-4:hover button.icon:hover{
-    background: skyblue;
-  }
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: right;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  margin-top: 11px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: pink;
-  color: black;
-}
-
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (max-width: 600px) {
-  .topnav a{
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-}
-
-/*Estilo de las 3 imagenes déspues del carrusel*/
-div.polaroid {
-  width: 30%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  float: left;
-  padding: 40px 20px;
- border-radius: 16px;
- margin-left: 40px;
-  margin-bottom: 80px;
-}
-
-.polaroid img {
-   border-radius: 8px;
-    margin-top: 5px;
-    margin-left: 1px;
-    width: 100%;
-}
-div.container {
-  text-align: center;
-  padding: 10px 20px;
-}
-/*Fin del estilo de las imagenes*/
-
-/*Estilo de las 4 imagenes*/
-.polaroid1 {
-  width: 23%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  float: left;
-  padding: 10px;
- border-radius: 16px;
-  margin-left: 25px;
-  margin-right: auto;
- margin-bottom: 50px;
-}
-
-.polaroid1 img {
-   border-radius: 8px;
-    margin-top: 5px;
-    margin-left: 8px;
-    width: 95%;
-}
-div.container1 {
-  text-align: center;
-  padding: 10px 20px;
-}
-/*Fin del estilo de 4 las imagenes*/
-
-
-/*Estilo del megusta en forma de corazón*/
-.heart {
-  background-image: url(imagenes/web_heart_animation.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 1450px;
-  cursor: pointer;
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-}
-.heart:hover
-{
-  background-position: right; //displaying last heart frame 
-}
-
-@-webkit-keyframes heartTransition
-{
-  0% {background-position: left;}
-  100% {background-position: right;}
-}
-
-@keyframes heartTransition
-{
-  0% {background-position: left;}
-  100% {background-position: right;}
-}
-
-.heart_animate
-{
-  -webkit-animation-duration: .8s;
-  //-webkit-animation-iteration-count: 1;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: heartTransition;
-  -webkit-animation-timing-function: steps(28);
-  animation-duration: .8s;
-  //animation-iteration-count: 1;
-  animation-iteration-count: infinite;
-  animation-name: heartTransition;
-  animation-timing-function: steps(28);
-  background-position: right;
-}
-/*------------Fin del estilo del me gusta en forma de corazón------------*/
-
-/*----Estilo de Credi Jamar-------------------------------*/
-.button-container{
-display:inline-block;
-position:relative;
-padding-right: 50px;
-margin-bottom: 40px;
-}
-
-.button-container button{
-
-position: absolute;
-
-right:50%;
-top:55%;
-background-color:red;
-border-radius: 10px;
-color: white;
-text-transform:uppercase;
-padding:1em 1.5em;
-
-}
-/*------------Fin estilo Credi Jamar-------------------------*/
-
-/*-----------Estilo de la galeria de imagenes----------*/
-#gallery .col-lg-4{
-  margin: 0 !important;
-  padding: 8px;
-  
-  display: flex;
-  flex-wrap: wrap;;
-  max-width: 1000px;
-  min-width: 300px; 
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-#gallery img{
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid skyblue;
-}
-
-#gallery img:hover{
-  border: 5px solid #F7F7F7;
-}
-
-@media screen and (min-width: 600px){
-  .gallery{
-  width: calc(50% - 2em);
-  overflow: hidden;
-  }
-}
-.centrado{
-    position: absolute;
-    top: 86%;
-    left: 50%;
-    color: white;
-    transform: translate(-50%, -50%);
-}
-/*---Fin de estilos de la galeria de imagenes----*/
-
-/*-------Estilos de la seccion Decoración y cuidados----*/
-#gallery1 img{
-
-  width: 100%;
-  height: auto;
- 
-  margin-bottom: 15px;
- 
-
-  object-fit: cover;
-  border-radius: 9px;
-  border: 1px solid skyblue;
-}
-
-#gallery1 .col-md-4{
-  margin: 0 !important;
-  padding-left: 5px;
-
-  display: flex;
-  flex-wrap: wrap;
- 
-}
-#gallery1 img:hover{
-  border: 5px solid #F7F7F7;
-}
-  /*-----Estilos para el texto sobre las imagenes de esta sección----*/
-.texto-encima-1{
-    position: absolute;
-    top: 70%;
-    left: 10%;
-}
-.texto-encima-2{
-    position: absolute;
-    top: 40%;
-    left: 10%;
-}
-.texto-encima-3{
-    position: absolute;
-    top: 40%;
-    left: 10%;
-}
-  /*----------Fin de los estilos del texto------*/
-/*-----Fin de los estilos de la seccion Decoración y cuidados------*/
-
-/*----Inicio de estilos de galeria encuentra tu estilo*/
-#gallery3 .col-lg-4{
-  margin: 0 !important;
-  padding: 40px;
-  
-  display: flex;
-  flex-wrap: wrap;;
-  max-width: 1000px;
-  min-width: 100px; 
-  margin-left: 25px;
-  margin-right: auto;
-}
-
-#gallery3 img{
-  width: 320px;
-  height: 400px;
-  border-radius: 8px;
-  border: 1px solid skyblue;
-}
-
-#gallery3 img:hover{
-  border: 5px solid #F7F7F7;
-}
-
-/*----------Fin estilos galeria encuentra tu estilo---------*/
-
-/*-------------Inicio estilos de la imagen del sillo---------*/
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-.texto-encima{
-    position: absolute;
-    top: 30%;
-    left: 48%;
-}
-.centrado1{
-    position: absolute;
-    top: 44%;
-    left: 63%;
-    transform: translate(-50%, -50%);
-}
-.text-align{
-    position: absolute;
-    top: 50%;
-    left: 48%;
-}
-.contenedor button {
-position:  absolute;
-top: 65%;
-left: 48%;
-width:200px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
-z-index:99;
-}
-/*-----------Fin de estilo de la imagen del sillon*/
-
-/*-----Estilo del button ver más categorías-----*/
-.center button{
- position: absolute;
-left: 39%;
-width:290px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
-z-index:99;
-margin-bottom: 30px;
-}
-/*------------Fin del estilo button ver más categorías--------------*/
-
-/*----------------Estilos del botón credijamar2--------------------*/
-.button-contenedor{
-display:inline-block;
-position:relative;
-padding-right: 50px;
-margin-bottom: 40px;
-}
-.button-contenedor button{
-
-position: absolute;
-
-right:38.38%;
-top:65%;
-background-color:red;
-border-radius: 10px;
-color: white;
-text-transform:uppercase;
-padding:1em 1.5em;
-}
-/*-----------Fin del estilo del botón credijamar2------------------*/
-
-</style><!-- //Fin de los estilos -->
 </head>
 
 
 <body>
 
   <!-- Barra encima del topnav-->
-<table width="100%" height="30" border="0" 
-cellspacing="5" cellpadding="5" bgcolor="#0cc4c4">
 
-<tr>
+<section class="footer-up">
+      <div class="information-3">
+<label><font face="Verdana, Geneva, sans-serif" color="white"  size="2">Juegos de sala 80% de descuento<strong>&nbsp;APROVECHA AHORA</strong></font></label>
 
-<td nowrap="nowrap">
+<a href="#facebook"><font face="Verdana, Geneva, sans-serif" 
+  color="white"  size="2"><i class="fa fa-facebook-square" aria-hidden="true"></i></font></a>  
 
-<table width="100%" border="0" align="left" cellspacing="1" cellpadding="1">
+<a href="#intagram"><font face="Verdana, Geneva, sans-serif" color="white" size="2"><i class="fa fa-instagram" aria-hidden="true"></i></font></a> 
 
-<tr>
-
-  <td align="right"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Juegos de sala 80% de descuento<strong>                 APROVECHA AHORA</strong></font>
-  </td>
-  <td width="430"  align="right"><a href="#facebook"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2"><i class="fa fa-facebook-square" aria-hidden="true"></i></font></a></td>
-  <td width="40" align="center"><a href="#intagram"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2"><i class="fa fa-instagram" aria-hidden="true"></i></font></a></td>
-  <td width="40" align="margin-left"><a href="#youtube"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2"><i class="fa fa-youtube-play" aria-hidden="true"></i></font></a></td>
-
-</tr>
-
-</table>
-</td>
-</tr>
-</table>
+<a href="#youtube"><font face="Verdana, Geneva, sans-serif" color="white" size="2"><i class="fa fa-youtube-play" aria-hidden="true"></i></font></a> 
+    </div>
+</section>
 <!-- Fin barra del topnav -->
 
 
 <!-- Barra de menu principal -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
- <div class="topnav">
+
+<div class="topnav">
 
 
 <a  href="#carritodecompras"class="fa fa-shopping-cart" aria-hidden="true">
@@ -529,79 +75,40 @@ cellspacing="5" cellpadding="5" bgcolor="#0cc4c4">
 
 </div>
 <!-- Fin barra Menu principal -->
+
 </nav>
 
 <!-- Sub barra # 2 -->
-  <table width="100%" height="30" border="0" 
-cellspacing="5" cellpadding="5" bgcolor="#ce242a">
+<section class="contein">
+ <div class="subMenu">
 
-<tr>
+<p><a href="#dormitorios"><font face="Verdana, Geneva, sans-serif" color="white" size="2">Dormitorios</a></font></a>
 
-<td nowrap="nowrap">
+<a href="#salas"><font face="Verdana, Geneva, sans-serif" color="white"  size="2">Salas</font></a>
 
-<table width="100%" border="0" align="left" cellspacing="1" cellpadding="1">
+<font face="Verdana, Geneva, sans-serif" color="white"  size="2">Comedores</font></a>
 
-<tr>
-<div class="collapse navbar-collapse" id="nav1">
-        <ul class="nav navbar-nav">
-<td width="105" align="center"><a href="#dormitorios"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Dormitorios</a></font></a></td>
+<font face="Verdana, Geneva, sans-serif" color="white"  size="2">Infantil</font></a>
 
-<td width="109" align="center"><a href="#salas"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Salas</font></a></td>
+<font face="Verdana, Geneva, sans-serif" color="white"  size="2">Entretenimiento</font></a>
+<font face="Verdana, Geneva, sans-serif" color="white"  size="2">Colchones</font></a> 
+|
+<font face="Verdana, Geneva, sans-serif" color="white"  size="2">Encuentra tu estilo</font></a>
+<font face="Verdana, Geneva, sans-serif" color="white"  size="2">Catálogos</font></a> 
 
-<td width="114"><a href="#comedores"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Comedores</font></a></td>
-                
-<td width="114"><a href="#infantil"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Infantil</font></a></td>
+<font face="Verdana, Geneva, sans-serif" color="white"  size="2">OFERTAS</font></a></p>
 
-<td width="116"><a href="#entretenimiento"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Entretenimiento</font></a></td>
-
-<td width="111"><a href="#colchones"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Colchones</font></a></td>
-
-<td width="113" align="left"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">|</font></td>
-
-<td width="80"><a href="#encuentratuestilo"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Encuentra tu estilo</font></a></td>
-
-<td width="116"><a href="#catálagos"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2">Catálogos</font></a></td>
-
-<td width="113"><a href="#ofertas"><font face="Verdana, Geneva, sans-serif" 
-        color="white"  size="2"><h4>OFERTAS</h4></font></a></td> 
-</ul>
-</div>
-</tr>
-
-</table>
-</td>
-</tr>
-</table>
+    </div>
+</section>
 <!--Fin sub barra # 2 -->
 
 <!-- Sub barra #4 -->
-  <table width="100%" height="30" border="0" 
-cellspacing="5" cellpadding="5" bgcolor="#d5edf0">
-
-<tr>
-
-<td nowrap="nowrap">
-
-<table width="100%" border="0" align="left" cellspacing="1" cellpadding="1">
-
-<tr>
-   <td width="105" align="center"><font face="Verdana, Geneva, sans-serif" 
-        color="black"  size="2">¡Te estamos cuidando! Conoce<a href="#aquí"> aquí</a><em><strong>     las medidas contra el Covid19.</strong></em></font></td>
- </tr>
-
-</table>
-</td>
-</tr>
-</table>
+<section class="contei">
+<div class="information-2">
+    <p><font face="Verdana, Geneva, sans-serif" 
+     color="black"  size="2">¡Te estamos cuidando! Conoce<a href="#aquí">&nbsp;aquí</a><em><strong>&nbsp;las medidas contra el Covid19.</strong></em></font></p>
+</div>
+</section>
 <!-- Fin sub barra #4 -->
 
 <!-- Carrusel de imagenes -->
@@ -972,46 +479,49 @@ color="white"  size="2">Más de 100 de productos con descuentos desde 30% a 50% 
 <br>
 <!-- ----------------Fin del button Ver Más Categorías------------- -->
 
-<table width="100%" height="170" border="0" 
-cellspacing="5" cellpadding="5" bgcolor=" #4a4a4a">
 
-<tr>
+<!-- ----Sección de información------------- -->
+<div class="row">
+    <div class="col-12">
+      <div class="text-center pt.5">
+       <h3><strong>Te atendemos como mejor te funcione</strong></h3>
+      </div>
+    </div>
+  </div>
 
-<td align="center">
+<div class="conte-info">
 
-<table width="100%" border="0" cellspacing="1" cellpadding="1">
-<tr>
-
-<td width="500" align="center"><font face="Verdana, Geneva, sans-serif" 
+  <br>
+  <div class="row">
+        <div class="col"><font face="Verdana, Geneva, sans-serif" 
 color="white" size="3"><i class="fa fa-phone-square" aria-hidden="true"></i>  
 &nbsp;<i class="fa fa-shopping-cart" aria-hidden="true"></i><br><br><strong><em>COMPRA LLAMANDO</strong></font><br /><font face="Verdana, Geneva, sans-serif" 
-color="white" size="2">llamar al 56 89898888</em></font></td>
+color="white" size="2">llamar al 56 89898888</em></font></div>
 
-<td width="400" align="center"><font face="Verdana, Geneva, sans-serif"
+    <div class="col"><font face="Verdana, Geneva, sans-serif"
 color="white" size="3"><i class="fa fa-smile-o" aria-hidden="true"></i><br><br>
 <strong><em>ASESORÍA TELEFÓNICA</strong></font><br /><font face="Verdana, Geneva, sans-serif"
-color="white" size="2">agendar una cita</em></font></td>
+color="white" size="2">agendar una cita</em></font></div>
 
-<td width="400" align="center"><font face="Verdana, Geneva, sans-serif" 
+    <div class="col"><font face="Verdana, Geneva, sans-serif" 
 color="white" size="3"><i class="fa fa-comments-o" aria-hidden="true"></i><br><br>
 <strong><em>ASESORÍA EN LÍNEA</strong></font>
 <br /><font face="Verdana, Geneva, sans-serif" 
-color="white" size="2">iniciar chat</em></font></td>
+color="white" size="2">iniciar chat</em></font></div>
 
-<td width="520" align="center"><font face="Verdana, Geneva, sans-serif" 
+    <div class="col"><font face="Verdana, Geneva, sans-serif" 
 color="white" size="3"><i class="fa fa-shopping-cart" aria-hidden="true"></i><br><br>
 <strong><em>COMPRA EN LÍNEA</strong></font>
 <br /><font face="Verdana, Geneva, sans-serif" 
-color="white" size="2">estas en el lugar correcto</em></font></td>
-</tr>
+color="white" size="2">estas en el lugar correcto</em></font></div>
+    </div>
+<br>
+</div>
 
-</table>
-</td>
-</tr>
-</table>
 <br>
 <br>
 <br>
+<!-- ----------Fin de esta sección---------- -->
 
 <!-- -----------Imagen Credi Jamar2---------------- -->
 <div class="button-contenedor">
@@ -1037,8 +547,8 @@ color="white" size="2">estas en el lugar correcto</em></font></td>
 
  <div class="row d-flex w-100 m-0">
     <div class="col-md-8">
-<img src="imagenes/pinturas.jpg" style="width:100%;height:450px" 
-alt="pinturas"/>
+    <img src="imagenes/pinturas.jpg" style="width:100%;height:450px" 
+   alt="pinturas"/>
 <div class="texto-encima-1">
 <font face="Verdana, Geneva, sans-serif" 
 color="white" size="3"><strong>Decora tus muebles con un presupuesto ajustado</strong></font>
@@ -1054,7 +564,7 @@ color="white" size="3">
     <div class="col-md-4">
       <div class="row">
         <div class="col-12">
-<img src="imagenes/tiempo.jpg" style="width:100%;height:215px" 
+<img src="imagenes/tiempo.jpg" style="width:100%;height:200px" 
 alt="pinturas"/>
 <div class="texto-encima-2">
 <font face="Verdana, Geneva, sans-serif" 
@@ -1067,8 +577,9 @@ color="white" size="3">
 <br>22 Sep 2020</font>
 </div>
         </div>
+
         <div class="col-12">
-<img src="imagenes/limpieza.jpg" style="width:100%;height:220px" 
+<img src="imagenes/limpieza.jpg" style="width:100%;height:210px" 
 alt="pinturas"/>
 <div class="texto-encima-3">
 <font face="Verdana, Geneva, sans-serif" 
@@ -1105,148 +616,193 @@ color="white" size="3">
 <!-- ----------------Fin del button Ir al blog de Jamar------------- -->
 
 <!-- ------------------- Sección Nosotros----------------------- -->
-<table width="100%" height="600" border="0" 
-cellspacing="5" cellpadding="5" bgcolor="#f7f7f7">
+<section class="container-about">
 
-<tr>
+<br>
+<div class="row">
+  <div class="col-12">
+    <div class="justify-content-center text-center">
+      <h3><font face="Verdana, Geneva,sans-serif" color="#114747">
+      <strong>Nosotros</strong></font></h3><br><font face="Verdana, Geneva,sans-serif" color="#114747" size="3">Jamar es una empresa moderna y visionaria, en constante crecimiento, que lleva más de 60 años<br>haciendo familias felices, amoblando sus hogares con calidad y confort.</font>
+    </div>
+  </div>
+</div>
 
-<td height="72" align="center" valign="middle">
-
-<table width="900" border="0" cellspacing="5" cellpadding="8">
-<tr>
-<div class="justify-content-center text-center">
-<h3><font face="Verdana, Geneva,sans-serif" color="#114747">
-<strong>Nosotros</strong></font></h3><br><font face="Verdana, Geneva,sans-serif" color="#114747" size="3">Jamar es una empresa moderna y visionaria, en constante crecimiento, que lleva más de 60 años<br>haciendo familias felices, amoblando sus hogares con calidad y confort.</font>
+<div class="row">
+    <div class="col-4">
+    <img src="imagenes/tiendajamar.png" 
+style="width:100%;height:300px" alt="Tienda Jamar"/>
+<p><font face="Verdana, Geneva,sans-serif" 
+color="#0a4b47" size="3"><strong>TIENDAS</strong></font>
+<br><br>
+<font face="Verdana, Geneva,sans-serif" color="#0a4b47" size="3">
+Hoy en día contamos con 20 tiendas físicas a nivel y con nuestra tienda Online la cual nuestros productos a los hogares haciendo familias felices.</p></font>
+    </div>
+    <div class="col-4">
+      <img src="imagenes/cendis.png" 
+style="width:100%;height:300px" alt="Cendis"/>
+<p><font face="Verdana, Geneva,sans-serif" 
+color="#0a4b47" size="3"><strong>CENDIS</strong></font>
+<br><br>
+<font face="Verdana, Geneva,sans-serif" color="#0a4b47" size="3">
+Es el tercer centro logístico más grande de Sur América y el mayor de Colombia, dedicado al sector mobiliario, líder en la industria del mueble en el país.</p></font>
+    </div>
+    <div class="col-4">
+      <img src="imagenes/cila.png" 
+style="width:100%;height:300px" alt="Cila"/>
+<p><font face="Verdana, Geneva,sans-serif" 
+color="#0a4b47" size="3"><strong>CILA</strong></font>
+<br><br>
+<font face="Verdana, Geneva,sans-serif" color="#0a4b47" size="3">
+Es el epicentro de la cadena productiva<br>del mueble y sus complementos, apoyado por un ecosistema de alta productividad que permite la fabricación de muebles especializados.</p></font>
+    </div>
 </div>
 <br>
-<td width="280"><img src="imagenes/tiendajamar.png" 
-style="width:100%;height:200px" alt="Tienda Jamar"/><br><br>
-<font face="Verdana, Geneva,sans-serif" 
-color="#0a4b47" size="3"><strong>TIENDAS</strong></font>
-</td>
-<td width="268"><img src="imagenes/cendis.png" 
-style="width:100%;height:200px" alt="Cendis"/><br><br>
-<font face="Verdana, Geneva,sans-serif" 
-color="#0a4b47" size="3"><strong>CENDIS</strong></font>
-</td> 
-<td width="268"><img src="imagenes/cila.png" 
-style="width:100%;height:200px" alt="Cila"/><br><br>
-<font face="Verdana, Geneva,sans-serif" 
-color="#0a4b47" size="3"><strong>CILA</strong></font>
-</td>  
+<br>
+</section>
 
-</tr>
-
-<tr>
-<td><font face="Verdana, Geneva,sans-serif" color="#0a4b47" size="2">
-Hoy en día contamos con 20 tiendas físicas a nivel y con nuestra tienda Online la cual nuestros productos a los hogares haciendo familias felices.</font>
-</td>
-
-<td><font face="Verdana, Geneva,sans-serif" color="#0a4b47" size="2">
-Es el tercer centro logístico más grande de Sur América y el mayor de Colombia, dedicado al sector mobiliario, líder en la industria del mueble en el país.</font></td>
-            
-<td><font face="Verdana, Geneva,sans-serif" color="#0a4b47" size="2">
-Es el epicentro de la cadena productiva del mueble y sus complementos, apoyado por un ecosistema de alta productividad que permite la fabricación de muebles especializados.</font></td>
-
-</tr>
-</table>
- </td>           
-</tr>
-</table>
 <!-- -------------------Fin de la  sección nosotros----------------- -->
 
 
 
 <!-- ---------Seccion de enviar correo----------  -->
-<table width="100%" height="270" border="0" 
-cellspacing="5" cellpadding="5" bgcolor="#e8e8e8">
-
-<tr>
-    <td align="center" valign="middle">
-<font face="Lucida Bright" color="#4a4a4a">
-<strong><h3>¿Quieres recibir el catálogo y las promociones en tu correo eléctrico?</h3></strong></font><br><br>
-
+<section class="container-email">
+<br>
+<br>
+  <div class="row">
+    <div class="col-12">
+      <div class="text-center pt.5">
+       <font face="Lucida Bright" color="#4a4a4a">
+<strong><h3>¿Quieres recibir el catálogo y las promociones en tu correo eléctrico?</h3></strong></font>
+<br>
+<br>
 <form name="contact" method="post" action="send.php">
    <input type="email" name="direccionemail" placeholder="Escribe tu correo aquí" 
     size="32" minlength="8" maxlength="64"/>
-<button class="btn btn-info btn-sm" type="submit">Enviar &nbsp;&nbsp;<i class="fa fa-paper-plane" aria-hidden="true"></i></button><br><br>
- <input type="checkbox"> &nbsp;&nbsp; Acepto politicas de privacidad y datos.</label><br>
+
+<button class="btn btn-info btn-sm" type="submit">Enviar &nbsp;&nbsp;<i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+<br><br>
+<input type="checkbox"> &nbsp;&nbsp; Acepto politicas de privacidad y datos.</input>
+ <br>
+ <br>
+ <br>
 </form>
-</td>
-</tr>
-</table>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- -----------------------Fin de la sección------------- -->
 
+
+<!------------------ Sección rastrea tu pedido ---------- -->   
+<div class="container-footer-1">
+  <div class="footer-1" >                   
+      <div class="information-1">
+      <font face="Verdana, Geneva,sans-serif" color="White" size="2">
+<p><em>Haz clic <a href="https://www.jamar.com/pages/rastrea-tu-pedido"> 
+aquí</a>&nbsp;para <strong>¡Para Rastrear tu pedido!</strong></em>
+&nbsp;<i class="fa fa-truck"></i></p></font>    
+  </div>
+ 
+</div>
+</div>
+<!-- -------------Fin de la sección Rastrea tu pedio------------ -->
+
+
 <!-------------- Footer ------>
-    <table width="100%" height="60" border="0" 
-cellspacing="5" cellpadding="5" bgcolor="#4a4a4a">
+    <footer>
+       
+       <div class="container-footer-all">
+        
+            <div class="container-body">
 
-<tr>
-    <td align="center">
-<font face="Verdana, Geneva,sans-serif" color="White" size="2"><em>Haz clic <a href="https://www.jamar.com/pages/rastrea-tu-pedido"> aquí</a>&nbsp;para <strong>¡Para Rastrear tu pedido!</strong></em>&nbsp;<i  href="#envíos" class="fa fa-truck"></i>
- </font>
- </td>
-</tr>
-</table>
-<!-- ------------------------------------------------------------------ -->
-
-    <table width="100%" height="360" border="0" 
-cellspacing="5" cellpadding="5" bgcolor="#242424">
-
-<tr>
-
-    <td align="center">
-<td width="200" align="left"></td>
-
-<td width="500" align="left"><font face="Verdana, Geneva, sans-serif" 
-color="white" size="3"><strong>FINANCIAMIENTO</strong></font><br><br>
+                <div class="colum1">
 <font face="Verdana, Geneva, sans-serif" 
-color="white" size="2">Credijamar<br>Cliente Oro<br>Puntos de pago</font><br><br>
-<img src="imagenes/CREDIJA.png" style="width:30%;height:20%" alt="Credijamar"/><br>
+color="white" size="3"><strong>FINANCIAMIENTO</strong></font>
+
+
+<div class="row">
+<label><font face="Verdana, Geneva, sans-serif" 
+color="white" size="3">
+Credijamar<br>
+Cliente Oro<br>
+Puntos de pago</font></label>
+</div>
+
+<div class="row">
+<label><img src="imagenes/CREDIJA.png" style="width:50%;height:40%" alt="Credijamar"/><br><br>
 <a target="_blank" href="https://www.credijamar.com.co/">
-<button type="button" class="btn btn-danger btn-lg">SOLICITAR CRÉDITO</button></a></td>
+<button type="button" class="btn btn-danger btn-lg">SOLICITAR CRÉDITO</button></a></label>
+</div>
 
-<td width="460" align="padding-left"><font face="Verdana, Geneva, sans-serif"
-color="white" size="3"><strong>CONTACTANOS</strong></font><br><br>
-<font face="Verdana, Geneva, sans-serif"
-color="white" size="2">-Barranquilla (5) 371 2000<br>-Cartagena (5) 694 9000<br>-Sincelejo (5) 2762026<br>-Bogotá (1) 7436938<br>-Santa Marta (5) 435 1979<br>-Montería (4) 789 8879<br>-Valledupar (5) 589 1001<br>-Bucaramanga (7) 697 0311<br>-Medellín (4) 6041631</font></td>
+</div>
 
-<td width="500" align="padding-left"><font face="Verdana, Geneva, sans-serif" 
-color="white" size="3"><strong>EMPRESA</strong></font><br><br>
-<font face="Verdana, Geneva, sans-serif"
-color="white" size="2">Nosotros<br>Protección de datos personales<br>Trabaje con nosotros<br>Condiciones campañas y eventos<br>Garantías<br>Servicio de transporte gratis<br>Cambios por satisfacción<br>Superintendencia de industria y<br>Comercio SIC</font></td>
+          <div class="colum2">
 
-<td width="520" align="padding-left"><font face="Verdana, Geneva, sans-serif" 
-color="white" size="3"><strong>SERVICIO AL CLIENTE</strong>
-</font><br><br>
-<font face="Verdana, Geneva, sans-serif"color="white" size="2">
-Contáctanos<br>Condiciones capañas<br>
-Rastrea tu pedido<br>Buscar una tienda<br>
-Estatuto del Consumidor<br>Términos y  condiciones
-</font><br><br><br><br></td>
+<font face="Verdana, Geneva, sans-serif" 
+color="white" size="3"><strong>&nbsp;&nbsp;CONTACTANOS</strong></font>
 
-</td>
-</tr>
-</table>
-<!-- ----------------------------------------------------------------  -->
+                    <div class="row">
+        <label><font face="Verdana, Geneva, sans-serif"
+color="white" size="3">-Barranquilla (5) 371 2000<br>-Cartagena (5) 694 9000<br>-Sincelejo (5) 2762026<br>-Bogotá (1) 7436938<br>-Santa Marta (5) 435 1979<br>-Montería (4) 789 8879<br>-Valledupar (5) 589 1001<br>-Bucaramanga (7) 697 0311<br>-Medellín (4) 6041631</font></label>
+                    </div>
+          </div>
 
-<!-------------------------------------------------------------------- -->
-<table width="100%" height="150" border="0" 
-cellspacing="5" cellpadding="5" bgcolor="black">
-<tr>
-    <td align="center"> 
-   <font face="Verdana, Geneva,sans-serif" color="white" size="2"> 
-TODOS LOS DERECHOS RESERVADOS, MUEBLES JAMAR S.A NIT: 9000615116- 4
-<br>
-TELÉFONOS DE ATENCIÓN AL CLIENTE: BARRANQUILLA (5) 37 200 RESTO DEL PAIS 018000 935 111
-<br>
-DIRECCIÓN: CALLE 34 # 39-41 BARRANQUILLA, ATLÁTICO
-<br>    
-Copyright &copy; MUEBLES JAMAR S.A 2020
-    </font>
-    </td>    
-    </tr>
-</table>
-<!-- -------------------------Fin del FOOTER--------------------------------------- -->
+                <div class="colum3">
+
+                <font face="Verdana, Geneva, sans-serif" 
+color="white" size="3"><strong>&nbsp;EMPRESA</strong></font>
+
+                    <div class="row">
+                        <label><font face="Verdana, Geneva, sans-serif"
+color="white" size="3">Nosotros<br>Protección&nbsp;de&nbsp;datos&nbsp;personales<br>Trabaje&nbsp;con&nbsp;nosotros<br>Condiciones&nbsp;campañas&nbsp;y&nbsp;eventos<br>Garantías<br>Servicio&nbsp;de&nbsp;transporte&nbsp;gratis<br>Cambios&nbsp;por&nbsp;satisfacción<br>Superintendencia&nbsp;de&nbsp;industria&nbsp;y<br>Comercio SIC</font></label>
+                    </div>
+                </div>
+
+                 <div class="colum4">
+
+<font face="Verdana, Geneva, sans-serif" 
+color="white" size="3"><strong>&nbsp;SERVICIO AL CLIENTE</strong></font>
+
+    <div class="row">
+<label><font face="Verdana, Geneva, sans-serif" 
+color="white" size="3">Contactanos<br>
+Condiciones&nbsp;campañas<br>
+Rastrea&nbsp;tu&nbsp;pedido&nbsp;aquí<br>
+Buscar una&nbsp;tienda<br>
+Estatuto&nbsp;del&nbsp;Consumidor<br>
+Términos&nbsp;y&nbsp;condiciones</font></label>
+
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </div>
+        
+<div class="container-footer">
+  <div class="footer" >                   
+      <div class="information">
+    <font face="Verdana, Geneva,sans-serif" color="white" size="2"> 
+    <p>TODOS LOS DERECHOS RESERVADOS, MUEBLES JAMAR S.A NIT: 9000615116- 4
+            <br>
+      TELÉFONOS DE ATENCIÓN AL CLIENTE: BARRANQUILLA 
+       (5) 37 200 RESTO DEL PAIS 018000 935 111
+            <br>
+     DIRECCIÓN: CALLE 34 # 39-41 BARRANQUILLA, ATLÁTICO<br>
+       © MUEBLES JAMAR S.A 2020
+     </p>
+   </font>
+        </div>
+  </div>
+ 
+</div>
+        
+    </footer>
+
+
+<!-- ---------------------Fin del FOOTER-------------------------- -->
 </body>
 </html>
