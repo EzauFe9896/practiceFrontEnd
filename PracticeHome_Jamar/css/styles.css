@@ -358,27 +358,28 @@ margin-bottom: 15px;
 /*-----Fin de los estilos de la seccion Decoración y cuidados------*/
 
 /*----Inicio de estilos de galeria encuentra tu estilo*/
-#gallery3 .col-lg-4{
+#gallery3 .col-md-2{
   margin: 0 !important;
   padding: 40px;
   
   display: flex;
-  flex-wrap: wrap;;
+  flex-wrap: wrap;
   max-width: 1000px;
   min-width: 100px; 
-  margin-left: 25px;
   margin-right: auto;
+
 }
 
 #gallery3 img{
-  width: 320px;
-  height: 400px;
+  width: 200px;
+  height: 350px;
   border-radius: 8px;
-  border: 1px solid skyblue;
+  margin-left: 45px;
+  padding: 20px;
 }
 
 #gallery3 img:hover{
-  border: 5px solid #F7F7F7;
+ border: 2px solid #F7F7F7;
 }
 
 /*----------Fin estilos galeria encuentra tu estilo---------*/
