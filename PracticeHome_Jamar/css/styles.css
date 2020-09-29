@@ -1,618 +1,485 @@
-   
+@charset "UTF-8";
 /* Add a red background color to the top navigation bar */
 .container-principal {
   background-color: red;
   height: 85px;
   width: 100%;
+  /*Da estilo al icono de barras*/
+  /* Change the color of links on hover */
+  /* Style the links inside the navigation bar */
+  /* Change the color of links on hover */ }
+  .container-principal img {
+    height: 60px;
+    width: 220px;
+    margin-top: 10px;
+    padding-left: 100px;
+    cursor: pointer; }
+  .container-principal button.icon-bar {
+    position: fixed;
+    border: none;
+    background: red;
+    height: 35px;
+    width: 40px;
+    color: #F7F7F7;
+    font-size: 18pt;
+    outline: none;
+    margin-left: 20px;
+    margin-top: 23px;
+    border-radius: 5px; }
+  .container-principal .icon-bar:hover {
+    background: pink; }
+  .container-principal ul {
+    list-style: none;
+    float: right;
+    display: block;
+    color: #F7F7F7;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 25px; }
+  .container-principal a {
+    color: #F7F7F7;
+    padding: 5px;
+    text-align: center; }
+  .container-principal .social {
+    font-size: 14px;
+    color: #F7F7F7;
+    margin-top: 30px;
+    padding-left: 8px;
+    cursor: pointer; }
+  .container-principal a:hover {
+    background-color: pink;
+    color: black; }
 
-}
-/*Da estilo posicion y demás a la imagen de Jamar*/
-.container-principal img {
-
-  height: 60px;
-  width: 220px;
-  margin-top: 10px;
-  padding-left: 100px;
-  cursor: pointer;
-
-}
- /* Make the image fully responsive */
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
-    padding-right: : 40px;
-    margin-top: 1px;
-    margin-bottom: 25px;
-  }
-
-/*Da estilo al icono de barras*/
-button.icon-bar{
-
-  position: fixed;
-  border: none;
-  background: red;
-  height: 35px;
-  width: 40px;
-  color: white;
-  font-size: 18pt;
-  outline: none;
-  margin-left: 20px;
-  margin-top: 23px;
-  border-radius: 5px;
-
-  }
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  padding-right: 40px;
+  margin-top: 1px;
+  margin-bottom: 25px; }
 
 /*Da estilo al lo que se encuentra el container-4 como el input search*/
-.container-4{
+.container-4 {
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
   float: right;
   padding-left: 60px;
-
-
-}
-
-
-/*Da estilo al input search*/
-.container-4 input#search{
-  width: 100%;
-  height: 30px;
-  background: white;
-  border: none;
-  font-size: 10pt;
-  float: none;
-  color: black;
-
-   
-
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  border-radius: 9px;
-}
-
-/*Da el estilo al icono de la lupa en el search*/
-.container-4 button.icon{
-  -webkit-border-top-right-radius: 8px;
-  -webkit-border-bottom-right-radius: 8px;
- -moz-border-radius-top-right: 8px;
-  -moz-border-radius-bottom-right: 8px;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
- 
-  border: none;
-  background: #232833;
-  height: 30px;
-  width: 40px;
-  color: #4F5B66;
-  opacity: 0;
-  margin-top: 18px;
-  font-size: 10pt;
- 
-  -webkit-transition: all .55s ease;
-  -moz-transition: all .55s ease;
-  -ms-transition: all .55s ease;
-  -o-transition: all .55s ease;
-  transition: all .55s ease;
-}
+  /*Da estilo al input search*/
+  /*Da el estilo al icono de la lupa en el search*/ }
+  .container-4 input#search {
+    width: 100%;
+    height: 30px;
+    background: #F7F7F7;
+    border: none;
+    font-size: 10pt;
+    float: none;
+    color: black;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px; }
+  .container-4 button.icon {
+    -webkit-border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-top-right: 8px;
+    -moz-border-radius-bottom-right: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+    background: #232833;
+    height: 30px;
+    width: 40px;
+    color: #4F5B66;
+    opacity: 0;
+    margin-top: 18px;
+    font-size: 10pt;
+    -webkit-transition: all .55s ease;
+    -moz-transition: all .55s ease;
+    -ms-transition: all .55s ease;
+    -o-transition: all .55s ease;
+    transition: all .55s ease; }
 
 /*Mantiene activo el, enfoca el icono de la lupa en el search*/
-.container-4:hover button.icon, 
-.container-4:active button.icon, 
-.container-4:focus button.icon{
-    outline: none;
-    opacity: 1;
-    margin-left: -40px;
-    margin-top: 10px;/* <----- Aquí hace que cuando el curso se dirije hacia el search se traslada hacia el center del navbar*/
-  }
-
- /* Change the color of links on hover */
- button.icon-bar:hover{
-    background: pink;
-  }
- /* Change the color of links on hover */
-.container-4:hover button.icon:hover{
-    background: skyblue;
-  }
-
-/* Style the links inside the navigation bar */
-.d-flex ul {
-  list-style: none;
-  float: right;
-  display: block;
-  color: white;
-  text-decoration: none;
-  font-size: 13px;
-  margin-top: 10px;
-
-}
-.d-flex a{
-color: white;
-padding: 5px;
-text-align: center;
-}
-
-.social a{
- font-size: 14px;
-color: white;
-margin-top: 14px;
-padding-left: 8px;
- cursor: pointer;
-}
+.container-4:hover button.icon,
+.container-4:active button.icon,
+.container-4:focus button.icon {
+  outline: none;
+  opacity: 1;
+  margin-left: -40px;
+  margin-top: 30px;
+  /* <--- Aquí hace que cuando el curso se dirije hacia el search se traslada hacia el center del navbar*/ }
 
 /* Change the color of links on hover */
-.d-flex a:hover {
-  background-color: pink;
-  color: black;
-}
+.container-4:hover button.icon:hover {
+  background: skyblue; }
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
-  .d-flex a{
+  .container-principal a {
     float: none;
     display: block;
     text-align: left;
     width: 100%;
     margin: 0;
-    padding: 14px;
-  }
-}
-
+    padding: 14px; } }
 /*Estilo de las 3 imagenes déspues del carrusel*/
 div.polaroid {
   width: 30%;
-  background-color: white;
+  background-color: #F7F7F7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   float: left;
   padding: 40px 20px;
- border-radius: 16px;
- margin-left: 40px;
-  margin-bottom: 80px;
-}
-
-.polaroid img {
-   border-radius: 8px;
+  border-radius: 16px;
+  margin-left: 40px;
+  margin-bottom: 80px; }
+  div.polaroid img {
+    border-radius: 8px;
     margin-top: 5px;
     margin-left: 1px;
-    width: 100%;
-}
-div.container {
-  text-align: center;
-  padding: 10px 20px;
-}
-/*Fin del estilo de las imagenes*/
+    width: 100%; }
+  div.polaroid .container {
+    text-align: center;
+    padding: 10px 20px; }
 
+/*Fin del estilo de las imagenes*/
 /*Estilo de las 4 imagenes*/
 .polaroid1 {
   width: 23%;
-  background-color: white;
+  background-color: #F7F7F7;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   float: left;
   padding: 10px;
- border-radius: 16px;
+  border-radius: 16px;
   margin-left: 25px;
   margin-right: auto;
- margin-bottom: 50px;
-}
-
-.polaroid1 img {
-   border-radius: 8px;
+  margin-bottom: 50px;
+  /*Fin del estilo de 4 las imagenes*/
+  /*Estilo del megusta en forma de corazón*/ }
+  .polaroid1 img {
+    border-radius: 8px;
     margin-top: 5px;
     margin-left: 8px;
-    width: 95%;
-}
-div.container1 {
-  text-align: center;
-  padding: 10px 20px;
-}
-/*Fin del estilo de 4 las imagenes*/
+    width: 95%; }
+  .polaroid1 .container1 {
+    text-align: center;
+    padding: 10px 20px; }
+  .polaroid1 .heart {
+    background-image: url(imagenes/web_heart_animation.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 1450px;
+    cursor: pointer;
+    display: inline-block;
+    height: 50px;
+    width: 50px; }
 
+.heart:hover {
+  background-position: right;
+  /*displaying last heart frame */ }
 
-/*Estilo del megusta en forma de corazón*/
-.heart {
-  background-image: url(imagenes/web_heart_animation.png);
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 1450px;
-  cursor: pointer;
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-}
-.heart:hover
-{
-  background-position: right; /*//displaying last heart frame */
-}
-
-@-webkit-keyframes heartTransition
-{
-  0% {background-position: left;}
-  100% {background-position: right;}
-}
-
-@keyframes heartTransition
-{
-  0% {background-position: left;}
-  100% {background-position: right;}
-}
-
-.heart_animate
-{
+@-webkit-keyframes heartTransition {
+  0% {
+    background-position: left; }
+  100% {
+    background-position: right; } }
+@keyframes heartTransition {
+  0% {
+    background-position: left; }
+  100% {
+    background-position: right; } }
+.heart_animate {
   -webkit-animation-duration: .8s;
-  //-webkit-animation-iteration-count: 1;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-name: heartTransition;
   -webkit-animation-timing-function: steps(28);
   animation-duration: .8s;
-  //animation-iteration-count: 1;
   animation-iteration-count: infinite;
   animation-name: heartTransition;
   animation-timing-function: steps(28);
-  background-position: right;
-}
+  background-position: right; }
+
 /*------------Fin del estilo del me gusta en forma de corazón------------*/
-
 /*----Estilo de Credi Jamar-------------------------------*/
-.button-container{
-display:inline-block;
-position:relative;
-padding-right: 50px;
-margin-bottom: 40px;
-}
+.button-container {
+  display: inline-block;
+  position: relative;
+  padding-right: 50px;
+  margin-bottom: 40px; }
+  .button-container button {
+    position: absolute;
+    right: 50%;
+    top: 55%;
+    background-color: red;
+    border-radius: 10px;
+    color: #F7F7F7;
+    text-transform: uppercase;
+    padding: 1em 1.5em; }
 
-.button-container button{
-
-position: absolute;
-
-right:50%;
-top:55%;
-background-color:red;
-border-radius: 10px;
-color: white;
-text-transform:uppercase;
-padding:1em 1.5em;
-
-}
 /*------------Fin estilo Credi Jamar-------------------------*/
-
 /*-----------Estilo de la galeria de imagenes----------*/
-#gallery .col-lg-4{
+#gallery .col-lg-4 {
   margin: 0 !important;
   padding: 8px;
-  
   display: flex;
-  flex-wrap: wrap;;
+  flex-wrap: wrap;
   max-width: 1000px;
-  min-width: 300px; 
+  min-width: 300px;
   margin-left: auto;
-  margin-right: auto;
-
-}
-
-#gallery img{
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  border: 1px solid skyblue;
-}
-
-#gallery img:hover{
-  border: 5px solid #F7F7F7;
-}
-
-@media screen and (min-width: 600px){
-  .gallery{
-  width: calc(50% - 2em);
-  overflow: hidden;
-  }
-}
-.centrado{
+  margin-right: auto; }
+  #gallery .col-lg-4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid skyblue; }
+  #gallery .col-lg-4 img:hover {
+    border: 5px solid #F7F7F7; }
+  #gallery .col-lg-4 .centrado {
     position: absolute;
     top: 86%;
     left: 50%;
-    color: white;
-    transform: translate(-50%, -50%);
-}
+    color: #F7F7F7;
+    transform: translate(-50%, -50%); }
+
+@media screen and (min-width: 600px) {
+  .gallery {
+    width: calc(50% - 2em);
+    overflow: hidden; } }
 /*---Fin de estilos de la galeria de imagenes----*/
-
 /*-------Estilos de la seccion Decoración y cuidados----*/
-#gallery1 img{
-
+#gallery1 img {
   width: 100%;
   height: auto;
-margin-bottom: 15px;
-
+  margin-bottom: 15px;
   object-fit: cover;
   border-radius: 9px;
-  border: 1px solid skyblue;
-}
+  border: 1px solid skyblue; }
 
-#gallery1 .col-md-4{
+#gallery1 .col-md-4 {
   margin: 0 !important;
   padding-left: 5px;
-
   display: flex;
-  flex-wrap: wrap;
- 
-}
-#gallery1 img:hover{
-  border: 5px solid #F7F7F7;
-}
+  flex-wrap: wrap; }
+  #gallery1 .col-md-4 .texto-encima-2 {
+    position: absolute;
+    top: 40%;
+    left: 10%; }
+  #gallery1 .col-md-4 .texto-encima-3 {
+    position: absolute;
+    top: 40%;
+    left: 10%; }
+
+#gallery1 img:hover {
+  border: 5px solid #F7F7F7; }
+
 /*-----Estilos para el texto sobre las imagenes de esta sección----*/
-.texto-encima-1{
-    position: absolute;
-    top: 70%;
-    left: 10%;
-}
-.texto-encima-2{
-    position: absolute;
-    top: 40%;
-    left: 10%;
-}
-.texto-encima-3{
-    position: absolute;
-    top: 40%;
-    left: 10%;
-}
+.texto-encima-1 {
+  position: absolute;
+  top: 70%;
+  left: 10%; }
+
 /*----------Fin de los estilos del texto------*/
 /*-----Fin de los estilos de la seccion Decoración y cuidados------*/
-
 /*----Inicio de estilos de galeria encuentra tu estilo*/
-#gallery3 .col-md-2{
+#gallery3 .col-md-2 {
   margin: 0 !important;
   padding: 40px;
-  
   display: flex;
   flex-wrap: wrap;
   max-width: 1000px;
-  min-width: 100px; 
-  margin-right: auto;
-
-}
-
-#gallery3 img{
-  width: 200px;
-  height: 350px;
-  border-radius: 8px;
-  margin-left: 45px;
-  padding: 20px;
-}
-
-#gallery3 img:hover{
- border: 2px solid #F7F7F7;
-}
+  min-width: 100px;
+  margin-right: auto; }
+  #gallery3 .col-md-2 img {
+    width: 200px;
+    height: 350px;
+    border-radius: 8px;
+    margin-left: 45px;
+    padding: 20px; }
+  #gallery3 .col-md-2 img:hover {
+    border: 1px solid #F7F7F7; }
 
 /*----------Fin estilos galeria encuentra tu estilo---------*/
-
 /*-------------Inicio estilos de la imagen del sillon---------*/
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-}
-.texto-encima{
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center; }
+  .contenedor .texto-encima {
     position: absolute;
     top: 30%;
-    left: 48%;
-}
-.centrado1{
+    left: 48%; }
+  .contenedor .centrado1 {
     position: absolute;
     top: 44%;
     left: 61%;
-    transform: translate(-50%, -50%);
-}
-.text-align{
+    transform: translate(-50%, -50%); }
+  .contenedor .text-align {
     position: absolute;
     top: 50%;
+    left: 48%; }
+  .contenedor button {
+    position: absolute;
+    top: 65%;
     left: 48%;
-}
-.contenedor button {
-position:  absolute;
-top: 65%;
-left: 48%;
-width:200px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
-z-index:99;
-}
+    width: 200px;
+    /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+    z-index: 99; }
+
 /*-----------Fin de estilo de la imagen del sillon*/
-
 /*-----Estilo del button ver más categorías-----*/
-.center button{
- position: absolute;
-left: 39%;
-width:290px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
-z-index:99;
-margin-bottom: 30px;
-}
+.center button {
+  position: absolute;
+  left: 39%;
+  width: 290px;
+  /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+  z-index: 99;
+  margin-bottom: 30px; }
+
 /*------------Fin del estilo button ver más categorías--------------*/
-
 /*----------------Estilos del botón credijamar2--------------------*/
-.button-contenedor{
-display:inline-block;
-position:relative;
-padding-right: 50px;
-margin-bottom: 40px;
-}
-.button-contenedor button{
+.button-contenedor {
+  display: inline-block;
+  position: relative;
+  padding-right: 50px;
+  margin-bottom: 40px; }
+  .button-contenedor button {
+    position: absolute;
+    right: 38.38%;
+    top: 65%;
+    background-color: red;
+    border-radius: 10px;
+    color: #F7F7F7;
+    text-transform: uppercase;
+    padding: 1em 1.5em; }
 
-position: absolute;
-
-right:38.38%;
-top:65%;
-background-color:red;
-border-radius: 10px;
-color: white;
-text-transform:uppercase;
-padding:1em 1.5em;
-}
 /*-----------Fin del estilo del botón credijamar2------------------*/
-
 /*-------------Estilos del footer----------*/
-*{
+footer {
+  width: 100%;
+  background: #202020;
+  color: #F7F7F7; }
+  footer .container-footer-all {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px; }
+    footer .container-footer-all .container-body {
+      display: flex;
+      justify-content: space-between; }
+      footer .container-footer-all .container-body .row {
+        margin-top: 20px;
+        display: flex; }
+        footer .container-footer-all .container-body .row label {
+          margin-top: 10px;
+          margin-left: 20px;
+          color: #C7C7C7; }
+  footer * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
-}
+    font-family: sans-serif; }
 
-footer{
-    width: 100%;
-    background: #202020;
-    color: white;   
-    
-}
-
-.container-footer-all{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px;
-}
-
-.container-body{
-    display: flex;
-    justify-content: space-between;
-}
-
-.row{
-    margin-top: 20px;
-    display: flex;
-}
-
-.row label{
-    margin-top: 10px;
-    margin-left: 20px;
-    color: #C7C7C7;
-}
-
-.container-footer{
-    width: 100%; 
-    background: #101010;
-
-}
-.container-footer-1{
-    width: 100%;  
-    height: 60px;
-    background: #4a4a4a;
-}
-.footer{
+@media screen and (max-width: 1100px) {
+  .container-body {
+    flex-wrap: wrap; } }
+.container-footer {
+  width: 100%;
+  background: #101010; }
+  .container-footer .footer {
     max-width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: center;  
-    padding: 20px;
-}
-.footer-1{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: center;  
-    padding: 20px;
-}
-
-.information p{
+    justify-content: center;
+    padding: 20px; }
+  .container-footer p {
     text-decoration: none;
     color: #C7C7C7;
     text-align: center;
-    margin-top: 25px;
-}
-.information-1 p{
+    margin-top: 25px; }
+
+.container-footer-1 {
+  width: 100%;
+  height: 60px;
+  background: #4a4a4a; }
+  .container-footer-1 .footer-1 {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px; }
+  .container-footer-1 p {
     text-decoration: none;
     color: #ffff;
-    text-align: center;
+    text-align: center; }
 
-}
-
-@media screen and (max-width: 1100px){
-    
-    .container-body{
-        flex-wrap: wrap;
-    }
-}
 /*-----Fin de los estilos de footer----*/
-
 /*----Estilo de la Seccion de enviar correo----  */
 .container-email {
-    width: 100%; 
-    background: #e8e8e8;
-}
-/*-------Fin de los estilos de esta sección*/
+  width: 100%;
+  background: #e8e8e8; }
 
+/*-------Fin de los estilos de esta sección*/
 /*Estilo de la sección Nosotros*/
 .container-about {
-    width: 100%; 
-    background: #F7F7F7;
-    margin: auto; 
-}
-
-.container-about img{
-   margin: 0 !important;
-  padding: 40px;
-  
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 25px;
-  margin-right: auto;
-}
-
-.container-about p{
-   justify-content: center; 
-   padding-left: 35px;
-
-}
- /*Fin de la sección*/
-
-/*Estilo de la sección informacicón*/
-.conteiner-info{
-    width: 100%; 
-    background: #4a4a4a;
-    text-align: center;
-}
-  /*Fin del estilo*/
-
-/*Estilo Sub barra #4*/
-.container-info2{
-   text-align: center;
-    width: 100%; 
-    background: #d5edf0;
-}
-.container-info2 p{
-  margin-top: 10px;
-}
- /*Fin del estilo*/
-
- /*Barra encima del topnav*/
-.container-up{
-    height: 60px;
-    background-color: #0cc4c4;
+  width: 100%;
+  background: #F7F7F7;
+  margin: auto; }
+  .container-about img {
+    margin: 0 !important;
+    padding: 40px;
     display: flex;
-}
-.container-up button{
-  background-color: #0cc4c4;
-  color: white;
-  display: inline-block;
-  font-size: 12px;
-  cursor: pointer;
-  border-radius: 8px;
-}
-.container-up p{
-    text-align: center;
-    margin-top: 20px;
-    color: white;
-}
-.col-md-2{
-margin-bottom: 25px;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-right: auto; }
+  .container-about p {
+    justify-content: center;
+    padding-left: 35px; }
 
-}
+/*Fin de los estiilos de la  sección*/
+/*Estilo de la sección informacicón*/
+.conteiner-info {
+  width: 100%;
+  background: #4a4a4a;
+  text-align: center; }
+
 /*Fin del estilo*/
+/*Estilo Sub barra #4*/
+.container-info2 {
+  text-align: center;
+  width: 100%;
+  background: #d5edf0; }
+  .container-info2 p {
+    margin-top: 10px; }
 
+/*Fin del estilo*/
+/*Barra encima del topnav*/
+.container-up {
+  height: 60px;
+  background-color: #0cc4c4;
+  display: flex; }
+  .container-up button {
+    background-color: #0cc4c4;
+    color: #F7F7F7;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 8px; }
+  .container-up p {
+    text-align: center;
+    margin-top: 17px;
+    color: #F7F7F7; }
+  .container-up .col-md-2 {
+    margin-top: 18px; }
+
+/*Fin del estilo*/
 /*Sub barra # 2*/
 .container-menu {
   padding-left: 120px;
   height: 55px;
-  background-color: #CE242A;
-}
-.container-menu a{
+  background-color: #CE242A; }
+  .container-menu a {
     margin-top: 15px;
-   color: white;
-}
- /*Fin del estilo de la sección*/
+    color: #F7F7F7; }
+
+/*Fin del estilo de la sección*/
+
+/*# sourceMappingURL=styles.css.map */
