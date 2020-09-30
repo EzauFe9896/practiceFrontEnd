@@ -1,0 +1,26 @@
+ /*Barra encima del topnav*/
+ .container-up{
+    height: 60px;
+    background-color: $color14;
+    display: flex;
+
+  button{
+      background-color: $color14;
+      color: $color2;
+      display: inline-block;
+      font-size: 12px;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    p{
+      text-align: center;
+      margin-top: 17px;
+      color: $color2;
+     }
+
+  .col-md-2{
+    margin-top: 18px;
+           }
+}
+/*Fin del estilo*/
